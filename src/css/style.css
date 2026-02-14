@@ -1,6 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-h1 {
-  font-weight: 100;
-  color: #6A3EA1;
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: -0.2rem;
+}
+.header-box__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-box__logo img {
+  object-fit: contain;
+  width: 3.8rem;
+}
+.header-box__logo img__logo a span {
+  font-size: 1.6rem;
+}
+.header-box__nav {
+  border: 0.1rem solid rgba(255, 255, 255, 0.15);
+  width: auto;
+  border-radius: 2rem;
+  backdrop-filter: blur(0.2rem) saturate(180%);
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  padding: 0;
+}
+.header__links--link a {
+  font-size: 1.6rem;
+}
+.header__links--link:first-child {
+  margin-left: 3rem;
+}
+.header__links--link:last-child {
+  margin-right: 3rem;
+}
+.header__links--link a:hover {
+  transition: all 0.2s;
+  color: #ffffff;
+}
+
+.header-box__registration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.header-box__registration-wrapper {
+  border: 0.1rem solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+}
+.header-box__registration-wrapper--btn {
+  cursor: pointer;
+  width: 12rem;
+  padding: 1rem;
+  background: rgba(140, 69, 255, 0.4);
+  box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.25) inset;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.header__line {
+  width: 100vw;
+  height: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
   font-family: "Ineter", sans-serif;
+  background-color: #000;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

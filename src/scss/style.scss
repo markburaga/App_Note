@@ -1,3 +1,32 @@
 @import "base/typography";
 @import "base/variables-color";
+@import "./base/mixins";
 @import "base/test";
+@import "./layout/header";
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ineter", sans-serif;
+  background-color: #000;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+ul{
+    list-style: none;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
