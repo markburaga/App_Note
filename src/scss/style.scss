@@ -3,6 +3,7 @@
 @import "./base/mixins";
 @import "base/test";
 @import "./layout/header";
+@import "./layout/main--boost";
 
 html{
   font-size: 62.5%;
@@ -10,7 +11,7 @@ html{
 
 body {
   font-family: "Ineter", sans-serif;
-  background-color: #000;
+  background-color: #000000;
 }
 
 button {

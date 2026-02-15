@@ -3,24 +3,29 @@
 .header-box {
   @include flex;
   padding: 1rem;
-  margin-bottom: -.2rem;
+  margin-bottom: -0.2rem;
 
-  &__logo{
+  &__logo a {
     @include flex;
+    gap: 1rem;
   }
   &__logo img {
     object-fit: contain;
     width: 3.8rem;
-    
-    &__logo a span{
-        font-size: 1.6rem;
+  }
+  &__logo {
+    &--span {
+      font-size: 2rem;
+      transition: all 0.2s;
+    }
+    &--span:hover {
+      color: #ffffff;
     }
   }
   &__nav {
     border: 0.1rem solid rgba(255, 255, 255, 0.15);
     width: auto;
     border-radius: 2rem;
-    backdrop-filter: blur(0.2rem) saturate(180%);
   }
 }
 .header__nav {
@@ -31,46 +36,51 @@
   gap: 7rem;
   // margin: 1rem 0;
   padding: 0;
-  
-  &--link a{
+
+  &--link a {
+    font-size: 1.6rem;
+  }
+  &--link:first-child {
+    margin-left: 3rem;
+  }
+  &--link:last-child {
+    margin-right: 3rem;
+  }
+
+  &--link a:hover {
+    transition: all 0.2s;
+    color: #ffffff;
+  }
+}
+.header-box__registration {
+  @include flex;
+  gap: 2rem;
+  &-wrapper {
+    border: 0.1rem solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    transition: all 0.3s;
+
+    &--btn {
+      cursor: pointer;
+      width: 12rem;
+      padding: 1rem;
+      background: rgba(140, 69, 255, 0.4);
+      box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7) inset;
+      color: #ffffff;
       font-size: 1.6rem;
+      transition: all 0.3s;
     }
-    &--link:first-child {
-        margin-left: 3rem;
+    &--btn:hover {
+      box-shadow: 0 0 10px 2px rgb(255, 255, 255) inset;
     }
-    &--link:last-child {
-        margin-right: 3rem;
-    }
-    
-    &--link a:hover {
-        transition: all 0.2s;
-        color: #ffffff;
-    }
+  }
+  &-wrapper:hover {
+    transform: translateY(-0.1rem);
+  }
 }
-.header-box__registration{
-    @include flex;
-    gap: 2rem;
-    &-wrapper{
-        border: 0.1rem solid rgba(255, 255, 255, 0.15);
-        border-radius: 1.5rem;
-        padding: .5rem;
-        
-        &--btn{
-            cursor: pointer;
-            width: 12rem;
-            padding: 1rem;
-            background: rgba(140, 69, 255, 0.40);
-            box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.25) inset;
-            color: #ffffff;
-            font-size: 1.6rem;
-            
-        }
-    }
-
-
-}
-.header__line{
+.header__line {
   width: 100vw;
-  height: .1rem;
-  background-color: rgba(255, 255, 255, 0.15);  
+  height: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.15);
 }

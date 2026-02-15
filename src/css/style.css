@@ -6,23 +6,27 @@
   padding: 1rem;
   margin-bottom: -0.2rem;
 }
-.header-box__logo {
+.header-box__logo a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 .header-box__logo img {
   object-fit: contain;
   width: 3.8rem;
 }
-.header-box__logo img__logo a span {
-  font-size: 1.6rem;
+.header-box__logo--span {
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.header-box__logo--span:hover {
+  color: #ffffff;
 }
 .header-box__nav {
   border: 0.1rem solid rgba(255, 255, 255, 0.15);
   width: auto;
   border-radius: 2rem;
-  backdrop-filter: blur(0.2rem) saturate(180%);
 }
 
 .header__links {
@@ -55,15 +59,23 @@
   border: 0.1rem solid rgba(255, 255, 255, 0.15);
   border-radius: 1.5rem;
   padding: 0.5rem;
+  transition: all 0.3s;
 }
 .header-box__registration-wrapper--btn {
   cursor: pointer;
   width: 12rem;
   padding: 1rem;
   background: rgba(140, 69, 255, 0.4);
-  box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.25) inset;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7) inset;
   color: #ffffff;
   font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.header-box__registration-wrapper--btn:hover {
+  box-shadow: 0 0 10px 2px rgb(255, 255, 255) inset;
+}
+.header-box__registration-wrapper:hover {
+  transform: translateY(-0.1rem);
 }
 
 .header__line {
@@ -72,13 +84,29 @@
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.boost {
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 162rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.boost__container {
+  position: absolute;
+  z-index: 2;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   font-family: "Ineter", sans-serif;
-  background-color: #000;
+  background-color: #000000;
 }
 
 button {
