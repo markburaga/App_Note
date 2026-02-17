@@ -1,0 +1,113 @@
+.price__cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 18rem;
+    &-free{
+        cursor: pointer;
+        width: 40rem;
+        height: 80rem;
+        position: relative;
+        padding: 3.5rem;
+        transition: all .3s;
+        &--slogan{
+            text-align: center;
+            font-size: 2.5rem;
+            background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &--item{
+            text-align: center;
+            font-size: 2rem;
+            // background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
+            // background-clip: text;
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent; 
+            color: white;
+            font-weight: $inter-700;
+        }
+        & hr{
+            opacity: (0.5);
+        }
+        &-botom{
+            padding: 3rem;
+            margin-bottom: 26rem;
+            &--item{
+                color: white;
+                opacity: (0.8);
+                font-size: 2rem;
+            }
+            &--item::before{
+                content: "✔";
+                margin-right: 1rem;
+            }
+        }
+        &-button{
+            & button{
+            position: relative;
+            padding: 1rem 2rem;
+            color: white;
+            cursor: pointer;
+            border: 1px solid white;
+           
+            }
+            // & button::before{
+            //     content: '';
+            //     position: absolute;
+            //     top: -1px;
+            //     left: -1px;
+            //     right: -1px;
+            //     bottom: -1px;
+            //     background: linear-gradient(267deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%);
+            //     border-radius: 2rem; 
+            //     z-index: -1;
+            // }
+            // & button::after{
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     right: 0;
+            //     bottom: 0;
+            //     background: black; 
+            //     border-radius: 2rem; 
+            //     z-index: -1;
+            // }
+             & button:hover{
+                color: #f700ff;
+            }
+        }
+    }
+    &-free::before{
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        background: linear-gradient(267deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%);
+        border-radius: 2rem; 
+        z-index: -1;
+    }
+    &-free::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black; 
+        border-radius: 2rem; 
+        z-index: -1;
+    }
+    &-free:hover{
+        background-color: #5200FF;
+        border-radius: 2rem;
+    }
+
+
+
+}

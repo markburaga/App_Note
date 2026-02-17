@@ -1,0 +1,49 @@
+.support__info{
+    width: 90rem;
+    margin: auto;
+    &-slogan{
+        text-align: center;
+        font-size: 5rem;
+        background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    }
+}
+.support__info-box{
+        & input{
+                border: none;
+                background-color: black;
+                border-bottom: .1rem solid white;
+                transition: all .2s;
+                background: linear-gradient(220deg,  #df20a6, #5200FF);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+                font-weight: $inter-900;
+                font-size: 1.8rem;
+                width: 50rem;
+                margin-bottom: 3rem;
+            }
+            
+            & input:focus{
+                outline: none;
+                border-bottom: .1rem solid white;
+                background-color: black;
+                background: linear-gradient(220deg,  #df20a6, #5200FF);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: $inter-900;
+                font-size: 1.8rem;
+            }
+         
+            & input::placeholder{
+                font-weight: $inter-600;
+                font-size: 1.8rem;
+                color: white;
+                padding: .5rem;
+            }
+}

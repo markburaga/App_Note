@@ -1,0 +1,24 @@
+.price{
+    width: 150rem;
+    margin: auto;
+}
+.price__info{
+    width: 70rem;
+    margin: auto;
+    margin-bottom: 16rem;
+    &--slogan{
+    text-align: center;
+    font-size: 5rem;
+     background: linear-gradient(267deg, #00F0FF 4.01%, #5200FF 57.55%, #FF2DF7 114.97%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    }
+    &--item{
+        text-align: center;
+        color: white;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        opacity: 0.5;
+    }
+}

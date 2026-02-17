@@ -1,0 +1,26 @@
+html{
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ineter", sans-serif;
+  background-color: #000000;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+}
+ul{
+    list-style: none;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}

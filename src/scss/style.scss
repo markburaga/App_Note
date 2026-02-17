@@ -1,0 +1,10 @@
+@import "base/typography";
+@import "base/variables-color";
+@import "./base/mixins";
+@import "./base/main";
+@import "base/test";
+@import "./layout/header";
+@import "./layout/main--boost";
+@import "./layout/main--price";
+@import "./layout/main--price-cart";
+@import "./layout/main--support";
