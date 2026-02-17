@@ -22,16 +22,16 @@
                     <nav class="header__nav">
                         <ul class="header__links">
                             <li class="header__links--link link">
-                                <a href="#">Features</a>
+                                <a class="header__links--link-a" href="#">Features</a>
                             </li>
                             <li class="header__links--link link">
-                                <a href="#">Developers</a>
+                                <a class="header__links--link-a" href="#">Developers</a>
                             </li>
                             <li class="header__links--link link">
-                                <a href="#">Company</a>
+                                <a class="header__links--link-a" href="#">Company</a>
                             </li>
                             <li class="header__links--link link">
-                                <a href="#">Blog</a>
+                                <a class="header__links--link-a" href="#">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -58,8 +58,8 @@
                     <h1 class="boost__container--slogan">Повысьте свою производительность, с помощью удобных заметок</h1>
                     <p class="boost__container--item">Улучшите свою дневную производительность за счет умных заметок </p>
                     <div class="boost__container--email">
-                        <input type="email" name="email" id="myEmail__boost" placeholder="Введите почту..." required>
-                        <button class="boost__btn btn">Начать бесплатно</button>
+                        <input class="boost__container--email-input" type="email" name="email" id="myEmail__boost" placeholder="Введите почту..." required>
+                        <button class="boost__container--email-button btn">Начать бесплатно</button>
                     </div>
                 </div>
             </div>   
@@ -79,7 +79,7 @@
                         <h3 class="price__cart-free--slogan">Базовый</h3>
                         <p class="price__cart-free--item">*Уже доступен</p>
                     </div>
-                    <hr>
+                    <hr class="price__cart-free--hr" >
                     <div class="price__cart-free-botom">
                         <p class="price__cart-free-botom--item">Цель</p>
                         <p class="price__cart-free-botom--item">Количество блокнотов/стопок</p>
@@ -89,7 +89,7 @@
                         <p class="price__cart-free-botom--item">Общее хранилище</p>
                     </div>
                     <div class="price__cart-free-button">
-                        <button type="submit">Присоедениться</button>
+                        <button class="price__cart-free-button-btn" type="submit">Присоедениться</button>
                     </div>
                 </div>
                 <div class="price__cart-free cart">
@@ -97,7 +97,7 @@
                         <h3 class="price__cart-free--slogan">PRO</h3>
                         <p class="price__cart-free--item">*500 /Руб.</p>
                     </div>
-                    <hr>
+                    <hr class="price__cart-free--hr">
                     <div class="price__cart-free-botom">
                         <p class="price__cart-free-botom--item">Цель</p>
                         <p class="price__cart-free-botom--item">Количество блокнотов/стопок</p>
@@ -107,7 +107,7 @@
                         <p class="price__cart-free-botom--item">Общее хранилище</p>
                     </div>
                         <div class="price__cart-free-button">
-                        <button type="submit">Присоедениться</button>
+                        <button class="price__cart-free-button-btn" type="submit">Присоедениться</button>
                     </div>
                 </div>
                 <div class="price__cart-free cart">
@@ -115,7 +115,7 @@
                         <h3 class="price__cart-free--slogan">Обучающий</h3>
                         <p class="price__cart-free--item">*1000 /Руб.</p>
                     </div>
-                    <hr>
+                    <hr class="price__cart-free--hr">
                     <div class="price__cart-free-botom">
                         <p class="price__cart-free-botom--item">Цель</p>
                         <p class="price__cart-free-botom--item">Количество блокнотов/стопок</p>
@@ -125,7 +125,7 @@
                         <p class="price__cart-free-botom--item">Общее хранилище</p>
                     </div>
                         <div class="price__cart-free-button">
-                        <button type="submit">Присоедениться</button>
+                        <button class="price__cart-free-button-btn" type="submit">Присоедениться</button>
                     </div>
                 </div>
             </div>
@@ -137,53 +137,82 @@
             <div class="support__info">
                 <h1 class="support__info-slogan">Если у Вас возникли вопросы, Вы можете обратиться в поддержку.</h1>
                 <div class="support__info-box">
-                    <input type="email" name="email" required>
-                    <button type="submit">Отправить</button>
+                    <input class="support__info-box-input" type="email" name="email"  placeholder="Введите почту..." required>
+                    <button class="support__info-box-btn" type="submit">Отправить</button>
                 </div>
-                <p>*Время ответа от одного дня</p>
+                <p class="support__info-p">*Время ответа от одного дня</p>
             </div>
         </div>
+        <div class="support-line"></div>
         </section>
         <!-- SECTION SUPPORT END-->
     </main>
     <!-- MAIN END -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__left">
-                <div class="footer__left-logo">
-                    <a href="#"><img src="../image/Logo/Logo__Sait.png" alt="">Notes</a>
+            <div class="footer-wrapper">
+                <div class="footer-wrapper__left">
+                    <div class="footer-wrapper__left-logo">
+                        <a class="footer-wrapper__left-logo-a"href="#">
+                        <img class="footer-wrapper__left-logo-a-img" src="../image/Logo/Logo__Sait.png" alt="">
+                        <span class="footer-wrapper__left-logo-a-span">Notes</span>    
+                    </a>
+                    </div>
+                    <div class="footer-wapper__left-social">
+                        <a class="footer-wrapper__left-social-a" href="#"><img src="../image/main__boost/X.svg" alt="X"></a>
+                        <a class="footer-wrapper__left-social-a" href="#"><img src="../image/main__boost/INST.svg" alt="INST"></a>
+                        <a class="footer-wrapper__left-social-a" href="#"><img src="../image/main__boost/YOU.svg" alt="YOu"></a>
+                    </div>
                 </div>
-                <div class="footer__left-social">
-                    <a href="#"><img src="../image/main__boost/X.svg" alt="X"></a>
-                    <a href="#"><img src="../image/main__boost/INST.svg" alt="INST"></a>
-                    <a href="#"><img src="../image/main__boost/YOU.svg" alt="YOu"></a>
+                <div class="footer-wrapper__right">
+                    <ul class="footer-wrapper__right__links">
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                      
+                    </ul>
+                    <ul class="footer-wrapper__right__links">
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                       
+                    </ul>
+                    <ul class="footer-wrapper__right__links">
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                    </ul>
+                    <ul class="footer-wrapper__right__links">
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        <li class="footer-wrapper__right__links-item">
+                            <a class="footer-wrapper__right__links-item-a" href="#" target="_blank"><span>Features</span></a>
+                        </li>
+                        
+                    </ul>
                 </div>
-            </div>
-            <div class="footer__right">
-                <ul class="footer__links link">
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                </ul>
-                <ul class="footer__links link">
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                </ul>
-                <ul class="footer__links link">
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                </ul>
-                <ul class="footer__links link">
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                    <a href="#" target="_blank"><li class="footer__link">Подукт</li></a>
-                </ul>
             </div>
         </div>
     </footer>

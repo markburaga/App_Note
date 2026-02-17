@@ -1,88 +1,101 @@
 .header {
+  &__line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
 }
-.header-box {
-  @include flex;
-  padding: 1rem;
-  margin-bottom: -0.2rem;
 
-  &__logo a {
-    @include flex;
-    gap: 1rem;
-  }
-  &__logo img {
-    object-fit: contain;
-    width: 3.8rem;
-  }
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  
   &__logo {
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      
+      img {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+      }
+    }
+    
     &--span {
       font-size: 2rem;
-      transition: all 0.2s;
-      background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &--span:hover {
-      color: #ffffff;
+      font-weight: bold;
     }
   }
+  
   &__nav {
-    border: 0.1rem solid rgba(255, 255, 255, 0.15);
-    width: auto;
-    border-radius: 2rem;
+    .header__nav {
+      // стили для навигации
+    }
+  }
+  
+  &__registration {
+    display: flex;
+    gap: 2rem;
+    
+    &-wrapper {
+      border: 0.1rem solid rgba(255, 255, 255, 0.15);
+      border-radius: 1.5rem;
+      padding: 0.5rem;
+      transition: all 0.3s;
+      
+      &:hover {
+        transform: translateY(-0.1rem);
+      }
+      
+      &--btn {
+        cursor: pointer;
+        width: 12rem;
+        padding: 1rem;
+        background: linear-gradient(90deg, #ff00dd, #0064f8);
+        font-size: 1.6rem;
+        transition: all 0.3s;
+        border: none;
+        border-radius: 1.5rem;
+        color: white;
+        
+        &:hover {
+          box-shadow: 0 0 10px 2px rgb(255, 255, 255) inset;
+        }
+      }
+    }
   }
 }
-.header__nav {
-}
+
 .header__links {
   display: flex;
   align-items: center;
   gap: 7rem;
-  // margin: 1rem 0;
   padding: 0;
-
-  &--link a {
-    font-size: 1.6rem;
-  }
-  &--link:first-child {
-    margin-left: 3rem;
-  }
-  &--link:last-child {
-    margin-right: 3rem;
-  }
-
-  &--link a:hover {
-    transition: all 0.2s;
-    color: rgba(255,255,255, 0.6);
-  }
-}
-.header-box__registration {
-  @include flex;
-  gap: 2rem;
-  &-wrapper {
-    border: 0.1rem solid rgba(255, 255, 255, 0.15);
-    border-radius: 1.5rem;
-    padding: 0.5rem;
-    transition: all 0.3s;
-
-    &--btn {
-      cursor: pointer;
-      width: 12rem;
-      padding: 1rem;
-      background: linear-gradient(90deg, #ff00dd, #0064f8);
+  list-style: none;
+  
+  &--link {
+    &-a {
       font-size: 1.6rem;
-      transition: all 0.3s;
+      color: white;
+      text-decoration: none;
+      transition: all 0.2s;
+      
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
-    &--btn:hover {
-      box-shadow: 0 0 10px 2px rgb(255, 255, 255) inset;
+    
+    &:first-child {
+      margin-left: 3rem;
+    }
+    
+    &:last-child {
+      margin-right: 3rem;
     }
   }
-  &-wrapper:hover {
-    transform: translateY(-0.1rem);
-  }
-}
-.header__line {
-  width: 100vw;
-  height: 0.1rem;
-  background-color: rgba(255, 255, 255, 0.15);
 }
