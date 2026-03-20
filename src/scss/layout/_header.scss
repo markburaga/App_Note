@@ -1,0 +1,101 @@
+.header {
+  &__line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  
+  &__logo {
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      
+      img {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+      }
+    }
+    
+    &--span {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  
+  &__nav {
+    .header__nav {
+      // стили для навигации
+    }
+  }
+  
+  &__registration {
+    display: flex;
+    gap: 2rem;
+    
+    &-wrapper {
+      border: 0.1rem solid rgba(255, 255, 255, 0.15);
+      border-radius: 1.5rem;
+      padding: 0.5rem;
+      transition: all 0.3s;
+      
+      &:hover {
+        transform: translateY(-0.1rem);
+      }
+      
+      &--btn {
+        cursor: pointer;
+        width: 12rem;
+        padding: 1rem;
+        background: linear-gradient(90deg, #ff00dd, #0064f8);
+        font-size: 1.6rem;
+        transition: all 0.3s;
+        border: none;
+        border-radius: 1.5rem;
+        color: white;
+        
+        &:hover {
+          box-shadow: 0 0 10px 2px rgb(255, 255, 255) inset;
+        }
+      }
+    }
+  }
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  padding: 0;
+  list-style: none;
+  
+  &--link {
+    &-a {
+      font-size: 1.6rem;
+      color: white;
+      text-decoration: none;
+      transition: all 0.2s;
+      
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    
+    &:first-child {
+      margin-left: 3rem;
+    }
+    
+    &:last-child {
+      margin-right: 3rem;
+    }
+  }
+}

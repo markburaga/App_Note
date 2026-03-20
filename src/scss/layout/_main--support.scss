@@ -1,0 +1,83 @@
+.support-line{
+    opacity: (0.5);
+    height: .1rem;
+    background-color: rgb(255, 255, 255);
+
+}
+.support__info{
+    width: 90rem;
+    margin: auto;
+    margin-bottom: 7rem;
+    &-p{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.68);
+        letter-spacing: 0.02em;
+        margin-top: 2.4rem;
+    }
+    &-slogan{
+        text-align: center;
+        font-size: 5rem;
+        background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 12rem;
+    
+    }
+}
+.support__info-box{
+    text-align: center;
+        &-input{
+                
+                border: none;
+                background-color: black;
+                border-bottom: .1rem solid white;
+                transition: all .2s;
+                background: linear-gradient(220deg,  #df20a6, #5200FF);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+                font-weight: $inter-900;
+                font-size: 1.8rem;
+                width: 50rem;
+                margin-bottom: 3rem;
+                margin-right: 3rem;
+                &:focus{
+                    outline: none;
+                    border-bottom: .1rem solid white;
+                    background-color: black;
+                    background: linear-gradient(220deg,  #df20a6, #5200FF);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: $inter-900;
+                    font-size: 1.8rem;
+                    opacity: (0.8);
+                }
+             
+                &::placeholder{
+                    font-weight: $inter-600;
+                    font-size: 1.8rem;
+                    color: white;
+                    padding: .5rem;
+                }
+            }
+        &-btn{
+            position: relative;
+            padding: 1rem 2rem;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                color: #f700ff;
+            }
+        }
+        &-btn::before{
+            @include before_gradient-color;
+        }
+        &-btn::after{
+            @include after_gradient-color;
+        }
+        }

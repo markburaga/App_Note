@@ -1,0 +1,80 @@
+.price__cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 18rem;
+  &-free{
+    cursor: pointer;
+    width: 40rem;
+    height: 80rem;
+    position: relative;
+    padding: 3.5rem;
+    transition: all .3s;
+    &::before{
+      @include before_gradient-color;
+    }
+    &::after{
+      @include after_gradient-color;
+    }
+    &:hover{
+      background: linear-gradient(160deg, rgba(20, 28, 56, 0.92), rgba(67, 20, 92, 0.88));
+      border-radius: 2rem;
+
+    }
+    &--slogan{
+      text-align: center;
+      font-size: 2.5rem;
+      background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--item{
+      text-align: center;
+      font-size: 2rem;
+      // background: linear-gradient(220deg,  #00F0FF, #5200FF, #FF2DF7);
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      color: white;
+      font-weight: $inter-700;
+    }
+    &-hr{
+      opacity: (0.5);
+    }
+    &-botom{
+      padding: 3rem;
+      margin-bottom: 26rem;
+      &--item{
+        color: white;
+        opacity: (0.8);
+        font-size: 2rem;
+      }
+      &--item::before{
+        content: "✔";
+        margin-right: 1rem;
+      }
+    }
+    &-button{
+      &-btn{
+        position: relative;
+        padding: 1rem 2rem;
+        color: white;
+        cursor: pointer;
+
+        z-index: 1;
+        &::before{
+          @include before_gradient-color;
+        }
+        &::after{
+          @include after_gradient-color;
+        }
+        &:hover{
+          color: #f700ff;
+          opacity: (0.8);
+        }
+      }
+    }
+  }
+}

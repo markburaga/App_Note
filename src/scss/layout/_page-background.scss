@@ -1,0 +1,24 @@
+body {
+  background-color: #05070f;
+  background-image:
+    radial-gradient(circle at 12% 14%, rgba(0, 240, 255, 0.22) 0%, rgba(0, 240, 255, 0) 34%),
+    radial-gradient(circle at 84% 16%, rgba(255, 45, 247, 0.2) 0%, rgba(255, 45, 247, 0) 32%),
+    radial-gradient(circle at 52% 78%, rgba(82, 0, 255, 0.18) 0%, rgba(82, 0, 255, 0) 40%),
+    linear-gradient(145deg, #05070f 0%, #0b1124 52%, #060a17 100%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 86px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 86px
+    );
+  background-attachment: fixed;
+  background-blend-mode: screen, screen, screen, normal, soft-light, soft-light;
+}
